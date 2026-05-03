@@ -8,8 +8,7 @@ from email.message import EmailMessage
 s = smtplib.SMTP('https://mail.google.com')
 msgs = s.getMessages()
 msg = msgs[len(msgs)]
-# you == the recipient's email address
-msg['Subject'] = f'The contents of {textfile}'
+msg['Subject'] = "FWD MSG"
 msg['From'] = guyann45@gmail.com
 msg['To'] = guyann45@icloud.com
 s.send_message(msg)
